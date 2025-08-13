@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/listviewdh"
+    android:padding="6dp"
+    android:layout_marginBottom="2dp">
+
+    <ImageView
+        android:id="@+id/imgsp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="Hình ảnh sản phẩm"
+        android:layout_marginEnd="8dp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtTensp"
+            android:textColor="#2FDC00"
+            android:textAllCaps="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:ellipsize="end" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID:"
+                android:textSize="9sp"
+                android:textStyle="bold"
+                android:textColor="#FF0000" />
+
+            <TextView
+                android:id="@+id/txt_Iddathang"
+                android:textColor="#FF0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="9sp"
+                android:textStyle="bold"
+                android:layout_marginStart="2dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" | Mã:"
+                android:textSize="9sp"
+                android:layout_marginStart="4dp" />
+
+            <TextView
+                android:id="@+id/txtMasp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="9sp"
+                android:layout_marginStart="2dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SL:"
+                android:textSize="9sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtSoLuong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="9sp"
+                android:layout_marginStart="2dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" | Giá:"
+                android:textSize="9sp"
+                android:textStyle="bold"
+                android:layout_marginStart="8dp" />
+
+            <TextView
+                android:id="@+id/txtGia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="9sp"
+                android:textStyle="bold"
+                android:textColor="#FF6600"
+                android:layout_marginStart="2dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtTrangThaiThanhToan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chưa thanh toán"
+            android:textSize="9sp"
+            android:textStyle="bold"
+            android:textColor="#FF5722"
+            android:layout_marginTop="2dp" />
+    </LinearLayout>
+
+    <!-- Controls Panel -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="8dp">
+
+        <!-- Payment Method -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="2dp">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="PT TT:"
+                android:textSize="9sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rg_payment_method"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/rd_tien_mat"
+                    android:textSize="8sp"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:text="TM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <RadioButton
+                    android:id="@+id/rd_chuyen_khoan"
+                    android:textSize="8sp"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:text="CK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- Payment Status -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="2dp">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="TT TT:"
+                android:textSize="9sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rg_payment_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/rd_chua_thanh_toan"
+                    android:textSize="8sp"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:text="Chưa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <RadioButton
+                    android:id="@+id/rd_da_thanh_toan"
+                    android:textSize="8sp"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:text="Đã TT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- Order Status -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trạng thái đơn hàng:"
+                android:textSize="9sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="1dp" />
+
+            <RadioGroup
+                android:id="@+id/rg_order_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/rd_da_dat_hang"
+                    android:textSize="8sp"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:text="Đã đặt hàng"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <RadioButton
+                    android:id="@+id/rd_dang_van_chuyen"
+                    android:textSize="8sp"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:text="Đang vận chuyển"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <RadioButton
+                    android:id="@+id/rd_van_chuyen_thanh_cong"
+                    android:textSize="8sp"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:text="Vận chuyển thành công"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <RadioButton
+                    android:id="@+id/rd_hoan_hang"
+                    android:textSize="8sp"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:text="Hoàn hàng"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/btnLuuTrangThai"
+            android:layout_width="100dp"
+            android:layout_height="32dp"
+            android:text="Lưu"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_style"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:elevation="2dp"/>
+    </LinearLayout>
+
+</LinearLayout>

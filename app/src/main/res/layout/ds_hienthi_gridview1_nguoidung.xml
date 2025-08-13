@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gridview1"
+    android:layout_marginBottom="1dp"
+    android:gravity="center"> <!-- Căn giữa toàn bộ nội dung -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+
+            android:layout_marginTop="3dp"
+
+            app:cardElevation="0dp"
+            app:cardCornerRadius="4dp"
+            android:layout_gravity="center"> <!-- Căn giữa CardView -->
+
+            <ImageView
+                android:id="@+id/imgsp"
+                android:layout_width="200dp"
+                android:layout_height="120dp"
+android:layout_gravity="center"
+                android:src="@mipmap/ic_launcher" /> <!-- Thay your_image bằng ảnh của bạn -->
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="3dp"
+android:gravity="center"
+            android:layout_gravity="center"> <!-- Căn giữa LinearLayout -->
+
+            <TextView
+                android:id="@+id/tensp"
+                android:text="Tên sp"
+                android:textColor="#0C9713"
+                android:textSize="12sp"
+
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:orientation="horizontal"
+
+    android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/dongia"
+                android:text="Đơn giá"
+                android:textColor="#FF1616"
+                android:textSize="10sp"
+
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            />
+    <TextView
+
+        android:text="VNĐ"
+        android:textColor="#FF1616"
+        android:textSize="10sp"
+android:layout_marginLeft="2dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    />
+        </LinearLayout>
+            <TextView
+                android:id="@+id/tinhtrangkho"
+                android:text="Tình trạng kho"
+                android:textColor="#FF1616"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/masp"
+        android:textSize="1sp"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+    <TextView
+        android:id="@+id/soluongkho"
+        android:textSize="1sp"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+    <TextView
+        android:id="@+id/mota"
+        android:textSize="1sp"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+    <TextView
+        android:id="@+id/ghichu"
+        android:textSize="1sp"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+    <TextView
+        android:id="@+id/manhomsanpham"
+        android:textSize="1sp"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+</RelativeLayout>

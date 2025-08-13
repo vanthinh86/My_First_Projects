@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgsp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="5dp"
+            android:background="@mipmap/ic_launcher_round"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/tensp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tên sản phẩm"
+                android:textAllCaps="true"
+                android:textColor="#3AC315"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FF0000"
+                    android:textSize="15dp"
+                    android:layout_marginRight="3dp"
+                    android:text="đ" />
+
+                <TextView
+                    android:id="@+id/dongia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FF0000"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnTru"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="#D8D8D8"
+                    android:src="@drawable/tru" />
+
+                <TextView
+                    android:id="@+id/soluongdat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="0" />
+
+                <ImageButton
+                    android:id="@+id/btnCong"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="#D8D8D8"
+                    android:src="@drawable/cong" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/xoasp"
+            android:text="Xóa"
+
+            android:textSize="10dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="40dp"
+            android:textStyle="bold"
+            android:textColor="#FF0000"
+            android:backgroundTint="#FF0000" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/masp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+     />
+
+</LinearLayout>
